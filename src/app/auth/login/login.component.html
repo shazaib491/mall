@@ -1,0 +1,18 @@
+<form  [formGroup]="loginForm" class="">  
+    <div class="row mt-5 p-5  ">
+        <div class="col-md-7 m-auto">
+            <label for="">Email</label>
+            <input type="email" class="form-control" formControlName="email"> 
+            <small *ngIf="h.email.touched && h.email.errors && h.email.errors.required">Email is required</small>
+            <small *ngIf="h.email.errors && h.email.errors.email">Must be a valid email</small>
+        </div>
+        <div class="col-md-7 m-auto">
+            <label for="">Password</label>
+            <input type="password" class="form-control" formControlName="password" >
+            <small *ngIf="h.password.errors && h.password.errors.minlength">Minimum 8 digit </small>
+            <small *ngIf="h.password.touched && h.password.errors && h.password.errors.required">Password is required</small>
+        </div>
+    </div>
+    
+    <button class="btn btn-dark mx-auto d-block w-50 " (click)="onSubmit()">Submit</button>
+</form>

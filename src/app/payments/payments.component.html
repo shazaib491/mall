@@ -1,0 +1,23 @@
+<div class="container">
+
+    <div class="row mt-5 ">
+
+        <div class="col-md-6 shadow p-5 m-auto border-danger border ">
+
+            <h2 class="text-center">Money Donation</h2>
+            <form #heroForm="ngForm">
+                <div class="form-group">
+                    <label for="">Enter Amount</label>
+                    <input type="text" placeholder="Enter Your Amount" class="form-control border border-top-0 border-left-0 border-right-0 border-danger rounded-0" [(ngModel)]="order_id" name="amout" id="">
+                </div>
+                <button type="submit" (click)="submit()" class="btn btn-primary rounded-0 w-100">Payment</button>
+            </form>
+            <form #heroForm="ngForm" class="mt-2">
+                <p class="text-center border p-2 text-warning" *ngIf="sub_id">Please Confirm your order </p>
+                <input type="hidden" [(ngModel)]="sub_id" name="amout" id="">
+                <button type="submit" [disabled]="!sub_id" (click)="createRzpayOrder()" class=" rounded-0 btn w-100 btn-success">confirm</button>
+            </form>
+        </div>
+
+    </div>
+</div>
