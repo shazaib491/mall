@@ -1,0 +1,14 @@
+.bg-img{
+    background-image: url(../../../assets/images/bg-1.jpg);
+    height: 800px;
+}
+.custom-shadow{
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.custom-font{
+    font-family: 'Barlow', sans-serif;
+font-family: 'Langar', cursive;
+
+}

@@ -1,31 +1,39 @@
-<form [formGroup]="registrationForm">
-    <div class="row mt-5 shadow w-75 mx-auto d-block p-2 border">
-        <div class="col-md-7 m-auto">
-            <label>Email</label>
-            <input type="email" class="form-control" formControlName="email" #email>
-            <small *ngIf=" h.email.touched && h.email.errors && h.email.errors.required">Email is required</small>
-            <small *ngIf="h.email.errors && h.email.errors.email">Must be a valid email</small>
-        </div>
-        <div class="col-md-7 m-auto">
-            <label>OTP</label>
-            <input type="number" class="form-control" #t (keyup)="verifyOTP(t)">
-            <button class="btn btn-info mt-3" (click)="onVerify(email)">Verify</button>
-            <small *ngIf="optError">OTP is not valid</small>
-        </div>
-        <div class="col-md-7 m-auto">
-            <label>Password</label>
-            <input type="email" class="form-control" formControlName="password">
-            <small *ngIf="h.password.errors && h.password.errors.minlength">Minimum 8 digit </small>
-            <small *ngIf="h.password.touched && h.password.errors && h.password.errors.required">Password is
-                required</small>
-        </div>
-        <div class="col-md-7 m-auto">
-            <label>Confrim Password</label>
-            <input type="password" class="form-control" formControlName="confirmPassword">
-
-        </div>
-        <div class="col-md-12 ">
-            <button class="btn btn-primary mx-auto d-block  mt-3" (click)="onSubmit()">Submit</button>
+<div class="bg-img">
+    <div class="container ">
+        <div class="row p-5 ">
+            <div class="col-md-6 col-12 col-sm-12  m-auto border bg-light  p-5   shadow">
+                <h3
+                    class="text-center text-dark  border p-3 border border-top-0 border-left-0 border-dark border-right-0 rounded-0 custom-font ">
+                    Register</h3>
+                <form [formGroup]="registrationForm">
+                    <div class="form-group">
+                        <label>Email</label>
+                    <input type="email" class="form-control border border-top-0 border-left-0 border-dark border-right-0 rounded-0" formControlName="email" #email>
+                    <small class="text-danger" *ngIf=" h.email.touched && h.email.errors && h.email.errors.required">Email is
+                        required</small>
+                    <small *ngIf="h.email.errors && h.email.errors.email">Must be a valid email</small>
+                    </div>
+                    <div class="form-group">
+                        <label>OTP</label>
+                        <input type="number" class="form-control border border-top-0 border-left-0 border-dark border-right-0 rounded-0" #t (keyup)="verifyOTP(t)">
+                        <button class="btn btn-outline-warning mt-3" (click)="onVerify(email)">Verify</button>
+                        <small *ngIf="optError">OTP is not valid</small>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="email" class="form-control border border-top-0 border-left-0 border-dark border-right-0 rounded-0" formControlName="password">
+                        <small class="text-danger" *ngIf="h.password.errors && h.password.errors.minlength">Minimum 8 digit </small>
+                        <small class="text-danger" *ngIf="h.password.touched && h.password.errors && h.password.errors.required">Password is
+                            required</small>
+                    </div>
+                    <div class="form-group">
+                        <label>Confrim Password</label>
+                        <input type="password" class="form-control border border-top-0 border-left-0 border-dark border-right-0 rounded-0" formControlName="confirmPassword">
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary mx-auto d-block w-50"
+                        (click)="onSubmit()">Submit</button>
+                </form>
+            </div>
         </div>
     </div>
-</form>
+</div>

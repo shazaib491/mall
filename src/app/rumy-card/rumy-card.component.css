@@ -1,0 +1,18 @@
+a:hover{
+background-color:#007bff !important;
+text-decoration: none;
+color:white;
+}
+.bg-img{
+    background-image: url(../../assets/images/rummy.jpg);
+    height: 700px;
+}
+.card-img{
+    background-image: url(../../assets/images/crown-2.jpeg);
+    
+}
+.custom-shadow{
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
