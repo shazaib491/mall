@@ -31,6 +31,15 @@
                     </div>
                     <button type="submit" class="btn btn-outline-dark mx-auto d-block w-50"
                         (click)="onSubmit()">Submit</button>
+                        <div class="row ">
+                            <div class="col-md-12 text-center mt-3">
+                                <a href="" class="">Forgot Password ?</a>
+                            </div>
+                            <div class="col-md-12 text-center mt-1">
+                                <a [routerLink]="['/registration']" routerLinkActive="router-link-active"  class="">Signup</a>
+                            </div>
+                        </div>
+
                 </form>
             </div>
         </div>
