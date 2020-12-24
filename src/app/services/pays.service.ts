@@ -15,7 +15,11 @@ function _window(): any {
 })
 export class PaysService {
 baseUrl:any=environment.url;
-  constructor(@Inject(PLATFORM_ID) private platformId: object,private http: HttpClient) { }
+visible: boolean;
+
+  constructor(@Inject(PLATFORM_ID) private platformId: object,private http: HttpClient) { 
+    this.visible = false;
+  }
 
 
   order_id(payload:any) {
@@ -32,4 +36,10 @@ baseUrl:any=environment.url;
       return _window();
     }
   }
+
+  hide() { this.visible = false; }
+
+  show() { this.visible = true; }
+
+  toggle() { this.visible = !this.visible; }
 }

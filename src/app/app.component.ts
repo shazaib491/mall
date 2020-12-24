@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from './services/auth.service';
+import { PaysService } from './services/pays.service';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,8 @@ import { AuthService } from './services/auth.service';
 })
 export class AppComponent implements OnInit {
   title = 'mall';
-  constructor(private authService:AuthService){}
+  isavlble:Boolean=false;
+  constructor(private authService:AuthService,public nav:PaysService){}
   ngOnInit(){
     this.authService.autoLogin()
   }

@@ -11,13 +11,31 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RegisterComponent } from './register/register.component';
 import { RumyCardComponent } from './rumy-card/rumy-card.component';
+import { PersonalCenterComponent } from './personal-center/personal-center.component';
+import { WalletComponent } from './wallet/wallet.component';
+import { BankCardComponent } from './bank-card/bank-card.component';
+import { Card2Component } from './card2/card2.component';
+import { OrderComponent } from './order/order.component';
+import { MyOrderComponent } from './my-order/my-order.component';
+import { AddressComponent } from './address/address.component';
+import { NewAddressComponent } from './new-address/new-address.component';
+import { NumberCardComponent } from './number-card/number-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     RegisterComponent,
-    RumyCardComponent
+    RumyCardComponent,
+    PersonalCenterComponent,
+    WalletComponent,
+    BankCardComponent,
+    Card2Component,
+    OrderComponent,
+    MyOrderComponent,
+    AddressComponent,
+    NewAddressComponent,
+    NumberCardComponent
   ],
   imports: [
     BrowserModule,
