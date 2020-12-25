@@ -10,6 +10,7 @@ import { MyOrderComponent } from './my-order/my-order.component';
 import { AddressComponent } from './address/address.component';
 import { NewAddressComponent } from './new-address/new-address.component';
 import { NumberCardComponent } from './number-card/number-card.component';
+import { BankDetailComponent } from './bank-detail/bank-detail.component';
 const routes: Routes = [
   {
     path: '',
@@ -56,6 +57,10 @@ const routes: Routes = [
   {
     path:"number",
     component:NumberCardComponent
+  },
+  {
+    path:"bankDetail",
+    component:BankDetailComponent
   }
 ];
 

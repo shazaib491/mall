@@ -5,11 +5,15 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './number-card.component.html',
   styleUrls: ['./number-card.component.css']
 })
-export class NumberCardComponent implements OnInit {
+export class NumberCardComponent  {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
-
 }
+
+
+
+
+
+  
+

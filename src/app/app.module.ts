@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule,CUSTOM_ELEMENTS_SCHEMA  } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
@@ -20,7 +20,7 @@ import { MyOrderComponent } from './my-order/my-order.component';
 import { AddressComponent } from './address/address.component';
 import { NewAddressComponent } from './new-address/new-address.component';
 import { NumberCardComponent } from './number-card/number-card.component';
-
+import { BankDetailComponent } from './bank-detail/bank-detail.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +35,8 @@ import { NumberCardComponent } from './number-card/number-card.component';
     MyOrderComponent,
     AddressComponent,
     NewAddressComponent,
-    NumberCardComponent
+    NumberCardComponent,
+    BankDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +46,7 @@ import { NumberCardComponent } from './number-card/number-card.component';
     BrowserAnimationsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
+  
   providers: [
     {
       provide:HTTP_INTERCEPTORS,
