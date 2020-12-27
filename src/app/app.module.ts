@@ -21,6 +21,7 @@ import { AddressComponent } from './address/address.component';
 import { NewAddressComponent } from './new-address/new-address.component';
 import { NumberCardComponent } from './number-card/number-card.component';
 import { BankDetailComponent } from './bank-detail/bank-detail.component';
+import { RezorpayComponent } from './rezorpay/rezorpay.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,8 @@ import { BankDetailComponent } from './bank-detail/bank-detail.component';
     AddressComponent,
     NewAddressComponent,
     NumberCardComponent,
-    BankDetailComponent
+    BankDetailComponent,
+    RezorpayComponent
   ],
   imports: [
     BrowserModule,

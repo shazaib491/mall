@@ -1,0 +1,33 @@
+.custom-border{
+    width: calc(100% - 5px - 10px );
+}
+.custom-row{
+    width:600px;
+    position: absolute;
+    top:20%;
+    left: calc(50% - 100px);
+}
+.custom-racharge {
+    width: 200px;
+}
+.custom-shadow{
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+background-color: white;
+}
+@media only screen and (max-width: 600px) {
+    .custom-row{
+        width:600px;
+        position: absolute;
+        top:500px;
+        left: 0px;
+
+    }
+    .email{
+        margin-top: 10px;
+    }
+    .custom-racharge {
+        width: 200px;
+    }
+  }
